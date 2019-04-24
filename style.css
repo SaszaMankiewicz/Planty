@@ -1,0 +1,850 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fafafa;
+  ;
+}
+
+
+/* Global*/
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+
+/* Navigatin */
+.menu {
+  display: flex;
+  justify-content: center;
+  padding: 40px 0 60px 0;
+}
+
+.hamburger_icon {
+  display: none;
+}
+
+.menu li {
+  list-style: none;
+  padding-left: 50px;
+  padding-right: 50px;
+  font-size: 18px;
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: black;
+}
+
+.menu li a:hover {
+  border-bottom: 2px solid black;
+}
+
+/* About */
+.about {
+  display: flex;
+  justify-content: space-around;
+  align-items: stretch;
+}
+
+.about_images {
+  max-width: 500px;
+  position: relative;
+}
+
+.img_first {
+  position: absolute;
+  top: 110px;
+  left: 110px;
+  z-index: 1000;
+}
+
+.img_first_size {
+  width: 320px;
+}
+
+.img_second::after {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  display: block;
+  height: 546px;
+  width: 400px;
+  border: 4px solid #acceb7;
+  z-index: 1;
+}
+
+.img_second_size {
+  width: 400px;
+}
+
+.about_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  max-width: 500px;
+}
+
+.about_content h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 120px;
+  letter-spacing: 10px;
+  font-style: italic;
+  font-weight: 100;
+}
+
+.about_content h4 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.about_content p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  padding-top: 25px;
+  margin-bottom: 25px;
+}
+
+.about_content button {
+  width: 100%;
+  background-color: #acceb7;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: 100;
+  color: white;
+  text-decoration: none;
+  border: none;
+  padding: 15px 45px;
+  transition: 0.2s;
+}
+
+.about_content button:hover {
+  background-color: #bee9b7;
+}
+
+/* <!-- Quotation --> */
+aside {
+  margin-top: 100px;
+  background-image: url(./planty-assets/bg.jpg);
+  height: 250px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+aside h3 {
+  font-family: 'Playfair Display', serif;
+  color: white;
+  font-size: 28px;
+  font-style: italic;
+  font-weight: 100;
+  line-height: 1.2;
+  padding: 0 40px 40px 0;
+}
+
+aside .container {
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+/* Testimonials */
+.testimonials {
+  margin-top: 40px;
+}
+
+.testimonials h2 {
+  font-family: 'Playfair Display', serif;
+  color: black;
+  font-size: 48px;
+  font-style: italic;
+  font-weight: 100;
+  line-height: 1.2;
+}
+
+.tesimonials_group {
+  display: flex;
+  margin-top: 80px;
+}
+
+.testimonial_first,
+.testimonial_second {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+
+.testimonial_second {
+  margin-top: 80px;
+}
+
+
+.testimonial_first::after,
+.testimonial_second::after {
+  content: "";
+  position: absolute;
+  top: -40px;
+  left: 50px;
+  display: block;
+  height: 200px;
+  width: 500px;
+  border: 4px solid #acceb7;
+  z-index: -1;
+}
+
+.testimonial_second::after {
+  margin-top: 60px;
+  top: -95px;
+  left: 40px;
+}
+
+.photo_albert {
+  height: 77%;
+  border-radius: 50%;
+  border: 4px solid #acceb7;
+}
+
+
+.photo_lidia {
+  height: 50%;
+  border-radius: 50%;
+  border: 4px solid #acceb7;
+  z-index: -1;
+}
+
+.photo_text {
+  margin-left: 20px;
+  max-width: 400px;
+}
+
+.photo_text h1 {
+  font-family: 'Playfair Display', serif;
+  color: black;
+  font-size: 34px;
+  font-style: italic;
+  font-weight: 100;
+  line-height: 1.2;
+}
+
+.photo_text h4 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 100;
+  color: black;
+}
+
+.photo_text p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  line-height: 1.7;
+  padding-top: 25px;
+  color: black;
+}
+
+
+/* Contact */
+.contact h2 {
+  font-family: 'Playfair Display', serif;
+  color: black;
+  font-size: 48px;
+  font-style: italic;
+  font-weight: 100;
+  line-height: 1.2;
+  padding-bottom: 15px;
+}
+
+.contact_form {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.contact_label {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 600px;
+  padding-right: 40px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  line-height: 1.7;
+  padding-top: 25px;
+  color: black;
+}
+
+
+.input_style {
+  border: 2px solid black;
+  padding: 15px;
+  margin-bottom: 35px
+}
+
+.textarea_style {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  text-align: left;
+  line-height: 1.7;
+  color: black;
+}
+
+
+.contact_image {
+  position: absolute;
+  right: 20px;
+  padding-top: 45px;
+}
+
+.contact_image::after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: -50px;
+  display: block;
+  height: 500px;
+  width: 350px;
+  border: 4px solid #acceb7;
+  z-index: 1000;
+}
+
+.contact_label button {
+  width: 100%;
+  background-color: #acceb7;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: 100;
+  color: white;
+  text-decoration: none;
+  border: none;
+  padding: 15px 45px;
+  transition: 0.2s;
+}
+
+.contact_label button:hover {
+  background-color: #bee9b7;
+}
+
+
+/* Footer */
+.footer_style {
+  margin-top: 150px;
+  background-color: #acceb7;
+}
+
+.footer_lists {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.footer_text {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  line-height: 1.7;
+  color: white;
+  text-align: left;
+  padding: 30px 0;
+}
+
+
+.footer_list {
+  padding: 20px 0;
+}
+
+.footer_list ul {
+  text-align: right;
+}
+
+.footer_list li {
+  display: inline;
+  padding-right: 20px;
+}
+
+.footer_list img {
+  width: 10%;
+}
+
+
+
+
+/* Media Queries */
+@media(max-width:1200px) {
+
+  /* About */
+
+  .about_images {
+    max-width: 400px;
+    position: relative;
+  }
+
+  .img_first_size {
+    width: 220px;
+  }
+
+  .img_second::after {
+    height: 341px;
+    width: 250px;
+  }
+
+  .img_second_size {
+    width: 250px;
+  }
+
+  .about_content {
+    max-width: 400px;
+  }
+
+  .about_content h1 {
+    font-size: 100px;
+  }
+
+
+  /* <!-- Quotation --> */
+
+  aside {
+    margin-top: 50px;
+    height: 200px;
+  }
+
+  aside h3 {
+    font-size: 26px;
+  }
+
+  /* Testimonials */
+
+  .testimonials {
+    margin-top: 50px;
+  }
+
+  .testimonials h2 {
+    font-size: 40px;
+    text-align: center;
+  }
+
+  .tesimonials_group {
+    justify-content: center;
+  }
+
+  .testimonial_first,
+  .testimonial_second {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 30px;
+  }
+
+  .photo_section {
+    text-align: center;
+  }
+
+  .testimonial_first::after,
+  .testimonial_second::after {
+    display: none;
+  }
+
+  .testimonial_second {
+    margin-top: 0;
+  }
+
+  .photo_lidia {
+    height: 77%;
+  }
+
+  .photo_text {
+    text-align: center;
+    max-width: 350px;
+  }
+
+  .photo_text h1 {
+    font-size: 28px;
+  }
+
+
+  /* Contact */
+  .contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 100px;
+
+  }
+
+  .contact h2 {
+    font-size: 40px;
+    text-align: center;
+  }
+
+  .contact_form {
+    display: flex;
+    justify-content: center;
+  }
+
+  .contact_label {
+    width: 500px;
+    padding-right: 0;
+  }
+
+  .contact_image {
+    z-index: -1;
+    opacity: 0.5;
+  }
+
+  .contact_image::after {
+    display: none;
+  }
+
+  /* Footer */
+
+  .footer_style {
+    margin-top: 100px;
+  }
+
+  .footer_lists {
+    justify-content: center;
+  }
+
+  .footer_list {
+    padding: 30px 0;
+  }
+
+  .footer_list img {
+    width: 7%;
+  }
+}
+
+
+@media(max-width:768px) {
+
+  /* About */
+  .menu li {
+    padding-left: 40px;
+    padding-right: 40px;
+    font-size: 14px;
+  }
+
+  .about_images {
+    max-width: 250px;
+    position: relative;
+  }
+
+  .img_first_size {
+    width: 220px;
+  }
+
+  .img_second::after {
+    width: 250px;
+  }
+
+  .img_second_size {
+    width: 250px;
+  }
+
+  .about_content {
+    max-width: 300px;
+  }
+
+  .about_content h1 {
+    font-size: 80px;
+  }
+
+  .about_content h4 {
+    font-size: 12px;
+  }
+
+  .about_content p {
+    font-size: 14px;
+  }
+
+  /* Testimonials */
+
+  .testimonials {
+    margin-top: 40px;
+  }
+
+  .tesimonials_group {
+    margin-top: 40px;
+  }
+
+  .testimonials h2 {
+    font-size: 36px;
+  }
+
+  .photo_text {
+    max-width: 250px;
+  }
+
+
+  /* Contact */
+  .contact {
+    margin-top: 70px;
+  }
+
+  .contact h2 {
+    font-size: 36px;
+  }
+
+
+  /* Footer */
+  .footer_style {
+    margin-top: 80px;
+  }
+
+  .footer_lists {
+    flex-direction: column;
+  }
+
+  .footer_text {
+    font-size: 10px;
+    text-align: center;
+    padding: 20px 0;
+  }
+
+  .footer_list {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+  }
+
+  .footer_list ul {
+    text-align: center;
+  }
+
+  .footer_list img {
+    width: 7%;
+  }
+
+
+  @media(max-width:576px) {
+
+    /* About */
+    .menu {
+      padding: 15px 0;
+    }
+
+    .menu li {
+      display: none;
+    }
+
+    .hamburger_icon {
+      display: block;
+      margin: 20px;
+      position: fixed;
+      right: 15px;
+      z-index: 1000000;
+      padding: 5px 5px 1px 5px;
+      background-color: rgba(172, 206, 183, 0.3);
+    }
+
+    .hamburger_icon:hover {
+      background-color: rgba(172, 206, 183, 0.5);
+    }
+
+
+    /* About */
+    .about {
+      margin-top: 40px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .about_images {
+      max-width: 300px;
+      position: relative;
+    }
+
+    .img_first,
+    .img_second,
+    .img_second::after {
+      display: none
+    }
+
+
+    .img_second_size {
+      width: 350px;
+    }
+
+    .about_content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      max-width: 400px;
+    }
+
+    .about_content h1 {
+      font-size: 60px;
+    }
+
+    .about_content h4 {
+      font-size: 14px;
+    }
+
+    .about_content p {
+      font-size: 18px;
+    }
+
+    .about_content button {
+      font-size: 16px;
+    }
+
+    /* Contact */
+
+    .contact_label {
+      width: 400px;
+    }
+  }
+
+  @media(max-width:360px) {
+
+    /* About */
+    .about {
+      margin-top: 30px;
+    }
+
+    .about_content {
+      max-width: 280px;
+    }
+
+    .about_content h1 {
+      font-size: 50px;
+    }
+
+    .about_content h4 {
+      font-size: 16px;
+    }
+
+    .about_content p {
+      font-size: 18px;
+      text-align: left;
+      line-height: 1.5;
+    }
+
+    .about_content button {
+      font-size: 16px;
+    }
+
+
+    /* Testimonials */
+
+    .testimonials {
+      margin-top: 50px;
+    }
+
+    .testimonials h2 {
+      font-size: 40px;
+      text-align: center;
+    }
+
+    .tesimonials_group {
+      justify-content: center;
+    }
+
+    .testimonial_first,
+    .testimonial_second {
+      flex-direction: column;
+      align-items: center;
+      padding: 0 30px;
+    }
+
+    .photo_section {
+      text-align: center;
+    }
+
+    .testimonial_first::after,
+    .testimonial_second::after {
+      display: none;
+    }
+
+    .testimonial_second {
+      margin-top: 0;
+    }
+
+    .photo_lidia {
+      height: 77%;
+    }
+
+    .photo_text {
+      text-align: center;
+      max-width: 350px;
+    }
+
+    .photo_text h1 {
+      font-size: 28px;
+    }
+
+
+    /* Testimonials */
+
+    .testimonials {
+      margin-top: 40px;
+    }
+
+    .testimonials h2 {
+      font-size: 32px;
+    }
+
+    .tesimonials_group {
+      flex-direction: column;
+    }
+
+    .testimonial_first,
+    .testimonial_second {
+      padding: 0;
+    }
+
+    .photo_albert {
+      margin-top: 40px;
+    }
+
+    .photo_text {
+      max-width: 280px;
+      padding-top: 20px;
+    }
+
+    .photo_text h1 {
+      font-size: 24px;
+    }
+
+    /* Contact */
+
+    .contact_label {
+      width: 280px;
+    }
+
+    /* Contact */
+
+
+    .contact h2 {
+      font-size: 32px;
+    }
+
+    .contact_label {
+      width: 280px;
+    }
+
+    .contact_image {
+      display: none;
+    }
+
+    /* Footer */
+    .footer_style {
+      margin-top: 40px;
+    }
+  }
+
+
+}
